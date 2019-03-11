@@ -779,3 +779,12 @@ table.query-columns td.buttons input[type=button] {
 select[multiple="multiple"] {
   height: auto !important;
 }
+
+/*
+ * To make sure a user's SSH key wraps, even though it is technically one
+ * very long word, we make sure the left-hand split div element will break
+ * a word when wrapping:
+ */
+.splitcontentleft {
+  word-wrap: break-word;
+}

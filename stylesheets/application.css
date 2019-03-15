@@ -1,6 +1,5 @@
 /* load the default Redmine stylesheet */
 @import url("../../../stylesheets/application.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
 .input_tiny {
   width: 50px;
 }
@@ -511,14 +510,14 @@ tr.even.priority-lowest td {
 }
 
 body {
-  font: normal 14px/1.5 'Open Sans', sans-serif;
+  font: normal 14px/1.5 sans-serif;
   font-size: 14px;
   color: #484848;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 a, a:link, a:visited {
@@ -537,7 +536,7 @@ th a, th a:link, th a:visited {
 }
 
 th {
-  font-weight: 300;
+  font-weight: normal;
 }
 
 code {
@@ -552,6 +551,11 @@ code {
   height: auto;
   *zoom: 1;
   border-bottom: 1px solid #393939;
+  /*
+   * Redmine makes the top menu font truly microscopic, so we must override
+   * it here.
+   */
+  font-size: 14px;
 }
 #top-menu:after {
   content: "";
@@ -618,7 +622,7 @@ code {
   clear: both;
 }
 #main-menu li a {
-  font-weight: 300;
+  font-weight: normal;
   border-top: 3px solid #202020;
   padding: 4px 15px 7px;
   -moz-transition: border-color 0.5s;
@@ -709,7 +713,7 @@ div.issue {
   line-height: 0.5;
   font-size: 25px;
   padding: 0 1px 6px;
-  font-weight: 300;
+  font-weight: normal;
   margin-right: -10px;
   cursor: pointer;
   -moz-transition: all 0.5s;

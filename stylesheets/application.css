@@ -546,6 +546,10 @@ code {
   border: 1px solid #e2e2e2;
 }
 
+pre code {
+  border: none;
+}
+
 #top-menu {
   background: #2d2d2d;
   height: auto;
